@@ -1,1 +1,39 @@
-yeah
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nzochegg</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script> 
+            $(function(){
+                $("#sidebarload").load("sidebar.html"); 
+                $("#headerload").load("header.html"); 
+                $("#footerload").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <div id="headerload"></div>
+
+    <body id="body">
+        <div id="sidebar">
+            <div id="sidebar_spec">
+                <div id="lien_side">
+                    <div id="sidebarload"></div>
+                </div>
+            </div>
+            <div id=accueil>
+                <div>
+                    <h1>Bienvenu sur le site de nzo chegg, et de la societer chegg.</h1>
+                    <p>plein de belles choses, des projets, portefoliot, fourre-tout <br/>
+                       gloubiboulga. juste ce qu'il y a dans ma tête, j'ai un petit univers
+                    </p>
+                </div>
+            </div>     
+        </div>
+    </body>
+
+    <div id="footerload"></div>
+
+</html>
