@@ -93,6 +93,10 @@
 	font-size: 40px;
 }
 
+.textecache {
+	display: none;
+}
+
 /* général body */
 
 #body {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nzochegg</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script> 
+            $(function(){
+                $("#sidebarload").load("sidebar.html"); 
+                $("#headerload").load("header.html"); 
+                $("#footerload").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <div id="headerload"></div>
+
+    <body id="body">
+        <div id="sidebar">
+            <div id="sidebar_spec">
+                <div id="lien_side">
+                    <div id="sidebarload"></div>
+                </div>
+            </div>
+            <div id=accueil>
+                <div id="article">
+                    <h1>STICKY</h1>
+                    <p>
+                        Ici c'est quand j'ai envie de parler et que je sais pas trop où le faire<br>
+                        donc je suis libre ici je fais ce que je veux yeahh!!! zizi prout merde!!!<br>
+                        zgeg et rezgeg vous allez faire quoi en fait je suis dingue putain
+                    </p>
+                </div>
+                <div id="article" href="#epopecourtmetragique">
+                    <h1>Epopée court métragique</h1>
+                    <button onclick="toggleTexte(this)">Clique ici</button>
+                    <p class="textecache">
+                        En ce moment jkiff juste regarder des courts métrages et ça me fait réaliser encore plus<br>
+                        à quel point cest libre l'art putain et ça me rend fou de me rendre compte de truc comme ça<br>
+                        seulement maintenant. Je pense vraiment que Twitter m'a bousillé le cerveau et que maintenant<br>
+                        que je m'en éloigne je reprend petit a petit mes réflexe de rêveur que j'aime tant.
+                    </p>
+                </div>
+            </div>     
+        </div>
+        <script>
+            function toggleTexte(bouton) {
+                const texte = bouton.nextElementSibling;
+
+                if (texte.style.display === "none" || texte.style.display === "") {
+                    texte.style.display = "block";
+                } else {
+                    texte.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+
+    <div id="footerload"></div>
+
+</html>
