@@ -97,6 +97,11 @@
 	display: none;
 }
 
+button {
+	text-decoration: none;
+	border: 5px solid black;
+}
+
 /* général body */
 
 #body {
