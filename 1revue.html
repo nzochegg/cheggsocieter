@@ -37,14 +37,14 @@
 
                 <script>
                         const images = [
-                          'cover/fuck you jsp.png',
-                          'cover/au pays de voltaire.png',
-                          'cover/au pays de voltaire.png',
-                          'cover/au pays de voltaire.png',
-                          'cover/au pays de voltaire.png',
-                          'cover/au pays de voltaire.png',
-                          'cover/au pays de voltaire.png',
-                          'cover/LEAK.png',
+                          'metachim1/1. .png',
+                          'metachim1/1.1. .png',
+                          'metachim1/2. .png',
+                          'metachim1/3. .png',
+                          'metachim1/4. .png',
+                          'metachim1/5. .png',
+                          'metachim1/6. .png',
+                          'metachim1/7. .png',
                         ];
 
                         let currentPage = 0;
@@ -77,11 +77,7 @@
 
                         prevBtn.addEventListener('click', () => {
                             if (currentPage > 0) {
-                                if (currentPage != images.length-1) {
-                                    currentPage-=2;
-                                } else {
-                                    currentPage--;  
-                                }
+                                currentPage--;  
                                 updateViewer();
                             }
                         });
