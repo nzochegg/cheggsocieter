@@ -89,6 +89,8 @@
                                     if (imgIndex < images.length) {
                                         const img = document.createElement('img');
                                         img.src = images[imgIndex];
+                                        img.style.width = '750px';
+                                        img.style.height = 'auto';
                                         viewer.appendChild(img);
                                     }
                                 }
@@ -96,6 +98,8 @@
                                 const imgIndex = currentPage;
                                 const img = document.createElement('img');
                                 img.src = images[imgIndex];
+                                img.style.width = '750px';
+                                img.style.height = 'auto';
                                 viewer.appendChild(img);
                             }
 
