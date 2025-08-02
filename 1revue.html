@@ -77,14 +77,14 @@
 
                         prevBtn.addEventListener('click', () => {
                             if (currentPage > 0) {
-                                currentPage--;
+                                currentPage-=2;
                                 updateViewer();
                             }
                         });
 
                         nextBtn.addEventListener('click', () => {
                             if ((currentPage + 1) * 2 < images.length) {
-                                currentPage++;
+                                currentPage+=2;
                                 updateViewer();
                             }
                         });
