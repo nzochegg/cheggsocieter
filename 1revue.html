@@ -57,7 +57,7 @@
 
                             if (currentPage != 0) {
                                 for (let i = 0; i < 2; i++) {
-                                    const imgIndex = currentPage * 2 + i;
+                                    const imgIndex = currentPage + i;
                                     if (imgIndex < images.length) {
                                         const img = document.createElement('img');
                                         img.src = images[imgIndex];
@@ -72,19 +72,27 @@
                             }
 
                           prevBtn.disabled = currentPage === 0;
-                          nextBtn.disabled = (currentPage + 1) * 2 >= images.length;
+                          nextBtn.disabled = (currentPage + 1) >= images.length;
                         }
 
                         prevBtn.addEventListener('click', () => {
                             if (currentPage > 0) {
-                                currentPage-=2;
+                                if (currentPage != images.length-1) {
+                                    currentPage-=2;
+                                } else {
+                                    currentPage--;  
+                                }
                                 updateViewer();
                             }
                         });
 
                         nextBtn.addEventListener('click', () => {
-                            if ((currentPage + 1) * 2 < images.length) {
-                                currentPage+=2;
+                            if ((currentPage + 1) < images.length) {
+                                if (currentPage != 0) {
+                                    currentPage+=2;
+                                } else {  
+                                    currentPage++;
+                                }
                                 updateViewer();
                             }
                         });
