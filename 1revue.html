@@ -26,7 +26,7 @@
             <div id=accueil>
                 <h1>METACHIM1</h1>
 
-                <div class="viewer" id="imageViewer" style="width: 750px; height: auto;">
+                <div class="viewer" id="imageViewer" style="display: flex; justify-content: 'center';">
                     <!-- Les images seront insérées ici dynamiquement -->
                 </div>
 
@@ -44,7 +44,7 @@
                           'metachim1/4. .png',
                           'metachim1/5. .png',
                           'metachim1/6. .png',
-                          'metachim1/7. .png',
+                          'metachim1/7. .jpeg',
                           'metachim1/8. .png',
                           'metachim1/8.1 .png',
                           'metachim1/8.2 .png',
@@ -58,7 +58,7 @@
                           'metachim1/14. .png',
                           'metachim1/15. .png',
                           'metachim1/16. .png',
-                          'metachim1/17. .png',
+                          'metachim1/17. .jpg',
                           'metachim1/18. .png',
                           'metachim1/19. .png',
                           'metachim1/20. .png',
@@ -109,7 +109,7 @@
 
                         prevBtn.addEventListener('click', () => {
                             if (currentPage > 0) {
-                                currentPage--;  
+                                currentPage-=2;  
                                 updateViewer();
                             }
                         });
