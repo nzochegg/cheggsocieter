@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nzochegg</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script> 
+            $(function(){
+                $("#sidebarload").load("sidebar.html"); 
+                $("#headerload").load("header.html"); 
+                $("#footerload").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <div id="headerload"></div>
+
+    <body id="body">
+        <div id="sidebar">
+            <div id="sidebar_spec">
+                <div id="lien_side">
+                    <div id="sidebarload"></div>
+                </div>
+            </div>
+            <div id=accueil>
+                <div class="buttons">
+                    <button id="prevBtn">←</button>
+                    <button id="nextBtn">→</button>
+                </div>
+
+                <div class="viewer" id="imageViewer" style="display: flex; justify-content: 'center';">
+                    <!-- Les images seront insérées ici dynamiquement -->
+                </div>
+
+                <script>
+                        const images = [
+                          'metachim4/1.png',
+                          'metachim4/2.png',
+                          'metachim4/3.png',
+                          'metachim4/4.png',
+                          'metachim4/5.png',
+                          'metachim4/6.png',
+                          'metachim4/7.png',
+                          'metachim4/8.png',
+                          'metachim4/9.png',
+                          'metachim4/10.png',
+                          'metachim4/11.png',
+                          'metachim4/12.png',
+                          'metachim4/13.png',
+                          'metachim4/14.png',
+                          'metachim4/15.png',
+                          'metachim4/16.png',
+                          'metachim4/17.png',
+                          'metachim4/18.png',
+                          'metachim4/19.png',
+                          'metachim4/20.png',
+                          'metachim4/21.png',
+                          'metachim4/22.png',
+                          'metachim4/23.png',
+                          'metachim4/24.png',
+                          'metachim4/25.png',
+                          'metachim4/26.png',
+                          'metachim4/27.png',
+                          'metachim4/28.png',
+                          'metachim4/29.png',
+                          'metachim4/30.png',
+                          'metachim4/31.png',
+                          'metachim4/32.png',
+                        ];
+
+                        let currentPage = 0;
+                        const viewer = document.getElementById('imageViewer');
+                        const prevBtn = document.getElementById('prevBtn');
+                        const nextBtn = document.getElementById('nextBtn');
+
+                        function updateViewer() {
+                            viewer.innerHTML = '';
+
+                            if (currentPage != 0) {
+                                for (let i = 0; i < 2; i++) {
+                                    const imgIndex = currentPage + i;
+                                    if (imgIndex < images.length) {
+                                        const img = document.createElement('img');
+                                        img.src = images[imgIndex];
+                                        img.style.width = '750px';
+                                        img.style.height = 'auto';
+                                        viewer.appendChild(img);
+                                    }
+                                }
+                            } else {
+                                const imgIndex = currentPage;
+                                const img = document.createElement('img');
+                                img.src = images[imgIndex];
+                                img.style.width = '750px';
+                                img.style.height = 'auto';
+                                viewer.appendChild(img);
+                            }
+
+                          prevBtn.disabled = currentPage === 0;
+                          nextBtn.disabled = (currentPage + 1) >= images.length;
+                        }
+
+                        prevBtn.addEventListener('click', () => {
+                            if (currentPage > 0) {
+                                currentPage-=2;  
+                                updateViewer();
+                            }
+                        });
+
+                        nextBtn.addEventListener('click', () => {
+                            if ((currentPage + 1) < images.length) {
+                                if (currentPage != 0) {
+                                    currentPage+=2;
+                                } else {  
+                                    currentPage++;
+                                }
+                                updateViewer();
+                            }
+                        });
+
+                        updateViewer();
+                </script>
+            </div>     
+        </div>
+    </body>
+
+    <div id="footerload"></div>
+
+</html>
