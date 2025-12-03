@@ -73,6 +73,7 @@
 	flex-direction: row;
 	align-items: flex-start;
 	gap: 25px;
+	flex-wrap: wrap;
 }
 
 #accueil div {
