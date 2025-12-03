@@ -122,6 +122,7 @@ button {
 #sidebar {
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
 }
 
 #sidebar_spec {
