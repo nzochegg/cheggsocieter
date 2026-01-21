@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,8 +24,17 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2025</h2>
+                <a href="#" data-target="6">METACHIM6 (décembre 2025)</a> <br/>
+                <a href="#" data-target="5">METACHIM5 (novembre 2025)</a> <br/>
+                <a href="#" data-target="4">METACHIM4 (octobre 2025)</a> <br/>
+                <a href="#" data-target="3">METACHIM3 (septembre 2025)</a> <br/>
+                <a href="#" data-target="2">METACHIM2 (aout 2025)</a> <br/>
+                <a href="#" data-target="1">METACHIM1 (mai, juin, juillet 2025)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
+                <div id="6" class="article actif">
                     <h1>METACHIM6 (décembre 2025)</h1>
                     <a href="6revue.html"><img src="metachim6/1.png" width="350" /></a>
                     <p>
@@ -35,35 +45,35 @@
                         lien que j'ai avec tout ce bordel qu'est la vie, je lève mon verre de sirop de citron
                     </p>
                 </div>
-                <div id="article">
+                <div id="5" class="article actif">
                     <h1>METACHIM5 (novembre 2025)</h1>
                     <a href="5revue.html"><img src="metachim5/1.jpg" width="350" /></a>
                     <p>
                         cinquième revue d'art métachimériste. première parti de POESIE IV-4 & divers essais avec l'ouverture à d'autres artistes!
                     </p>
                 </div>
-                <div id="article">
+                <div id="4" class="article actif">
                     <h1>METACHIM4 (octobre 2025)</h1>
                     <a href="4revue.html"><img src="metachim4/1.png" width="350" /></a>
                     <p>
                         quatrième revue d'art métachimériste. poésie III et atelier.
                     </p>
                 </div>
-                <div id="article">
+                <div id="3" class="article actif">
                     <h1>METACHIM3 (septembre 2025)</h1>
                     <a href="3revue.html"><img src="metachim3/1.png" width="350" /></a>
                     <p>
                         troisième revue d'art métachimériste. en collaboration avec l'artiste PAÏS.
                     </p>
                 </div>
-                <div id="article">
+                <div id="2" class="article actif">
                     <h1>METACHIM2 (aout 2025)</h1>
                     <a href="2revue.html"><img src="metachim2/0..jpg" width="350" /></a>
                     <p>
                         deuxième revue d'art métachimériste. entièrement réalisé par N.Z..
                     </p>
                 </div>
-                <div id="article">
+                <div id="1" class="article actif">
                     <h1>METACHIM1 (mai, juin, juillet 2025)</h1>
                     <a href="1revue.html"><img src="metachim1/1. .png" width="350" /></a>
                     <p>
@@ -71,6 +81,13 @@
                     </p>
                 </div>
             </div>     
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

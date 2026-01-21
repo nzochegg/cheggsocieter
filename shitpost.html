@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -24,7 +25,7 @@
                 </div>
             </div>
             <div id=accueil>
-                <div id="article">
+                <div class="article actif">
                     <h1>Manifeste du shitpost (2022)</h1>
                     <img src="societer chegg/manifesteshitpost1.jpg" width="500" />
                     <img src="societer chegg/manifesteshitpost2.jpg" width="500" />
@@ -33,6 +34,12 @@
                     </p>
                 </div>
             </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

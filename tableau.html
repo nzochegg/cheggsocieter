@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,8 +24,12 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2025</h2>
+                <a href="#" data-target="1">vert1 (juillet 2025)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
+                <div id="1" class="article actif">
                     <h1>vert1 (juillet 2025)</h1>
                     <img src="tableau/vert1/1.png" width="300">
                     <img src="tableau/vert1/2.png" width="300">
@@ -34,6 +39,13 @@
                     </p>
                 </div>
             </div>     
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

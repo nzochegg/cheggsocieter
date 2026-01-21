@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -24,16 +25,16 @@
                 </div>
             </div>
             <div id=accueil>
-                <div id="article">
+                <div class="article actif">
                     <h1>LA REVUE METACHIM (juillet 2025-en cours)</h1>
                     <p>juste envie de publier une revue. parce qu'on fait de trucs, besoin d'un support. <br/>
                        <a href="revues.html">le lien pour y aller</a></p>
                 </div>
-                <div id="article">
+                <div class="article actif">
                     <h1>Manifeste du mouvement métachimérique (2025)</h1>
                     <img src="societer chegg/manifeste/manifestev3.png"/>
                 </div>
-                <div id="article">
+                <div class="article actif">
                     <h1>Manifeste du mouvement métachimérique (2024)</h1>
                     <img src="societer chegg/manifeste/manifeste 1.png"/>
                     <img src="societer chegg/manifeste/manifeste 2.png"/>
@@ -41,6 +42,12 @@
                     <img src="societer chegg/manifeste/manifeste  4.png"/>
                 </div>
             </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

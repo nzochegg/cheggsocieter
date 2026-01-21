@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,8 +24,13 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2024</h2>
+                <a href="#" data-target="2">A la longueur des vagues (aout 2024)</a> <br/>
+                <a href="#" data-target="1">DTRpppp (juillet 2024)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
+                <div id="2" class="article actif">
                     <h1>A la longueur des vagues (aout 2024)</h1>
                     <img src="societer chegg/poesie/1.png" width="500" />
                     <img src="societer chegg/poesie/2.png" width="500" />
@@ -41,7 +47,7 @@
                         je veux juste écrire cest tout. La vidéo était un peu un prétexte je pense.
                     </p>
                 </div>
-                <div id="article">
+                <div id="1" class="article">
                     <h1>DTRpppp (juillet 2024)</h1>
                     <img src="societer chegg/DTR pppp page 1.png" width="350" />
                     <img src="societer chegg/DTR pppp page 2.png" width="350" />
@@ -51,6 +57,13 @@
                     </p>
                 </div>
             </div>     
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

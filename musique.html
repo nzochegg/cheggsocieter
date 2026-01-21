@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,8 +24,29 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2025</h2>
+                <a href="#" data-target="15">avant le calme pt.4 (août 2025)</a> <br/>
+                <a href="#" data-target="14">avant le calme pt.3 (juillet 2025)</a> <br/>
+                <a href="#" data-target="13">ARCHAPLUGG (septembre 2025)</a> <br/>
+                <a href="#" data-target="12">avant le calme pt.2 (juillet 2025)</a> <br/>
+                <a href="#" data-target="11">avant le calme pt.1 (juin 2025)</a> <br/>
+                <a href="#" data-target="10">EPMMPAÏS1 (mai 2025)</a> <br/>
+                <a href="#" data-target="9">freestyle MM (mars-mai 2025)</a> <br/>
+                <a href="#" data-target="8">jeune alchimiste (2025)</a> <br/>
+                
+                <h2>2024</h2>
+                <a href="#" data-target="7">Cheggtape volume 2 (2024)</a> <br/>
+                <h2>2023</h2>
+                <a href="#" data-target="6">Cheggtape volume 1 (2023)</a> <br/>
+                <a href="#" data-target="5">champignon triste (2023)</a> <br/>
+                <a href="#" data-target="4">LA FÊTE AUX CHAMPIGNONS (2023)</a> <br/>
+                <a href="#" data-target="3">placard ouvert (2023)</a> <br/>
+                <a href="#" data-target="2">LRISLATN (2023)</a> <br/>
+                <a href="#" data-target="1">3EPs perdus (2021-2023)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
+                <div id="15" class="article actif">
                     <h1>avant le calme pt.4 (août 2025)</h1>
                     <img src="societer chegg/avant le calme pt4 v1.png"/>
                     <p>
@@ -34,7 +56,7 @@
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/avant-le-calme-pt-4">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="14" class="article actif">
                     <h1>avant le calme pt.3 (juillet 2025)</h1>
                     <img src="societer chegg/avant le calme pt3 v1.png" />
                     <img src="societer chegg/avant le calme pt3 v2.png" />
@@ -46,11 +68,11 @@
                         de tout petits formats.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/avant-le-calme-pt3">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/avant-le-calme-pt3">écouter sur soundcloud!</a> <br />
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/avant-le-calme-pt-3">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="13" class="article actif">
                     <h1>ARCHAPLUGG (septembre 2025)</h1>
                     <img src="societer chegg/archaplugg.png"  />
                     <p>
@@ -58,7 +80,7 @@
                         réalisé, produit et interprété par jeune chegg et WWAH.
                     </p>
                 </div>
-                <div id="article">
+                <div id="12" class="article actif">
                     <h1>avant le calme pt.2 (juillet 2025)</h1>
                     <img src="societer chegg/avant le calme pt2 v1.png"  />
                     <img src="societer chegg/avant le calme pt2 v2.png"  />
@@ -71,11 +93,11 @@
                         rafistolé longtemps après et des trucs plus récents. Sorti le 15 septembre.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/avant-le-calme-pt2">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/avant-le-calme-pt2">écouter sur soundcloud!</a> <br />
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/avant-le-calme-pt-2">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="11" class="article actif">
                     <h1>avant le calme pt.1 (juin 2025)</h1>
                     <img src="societer chegg/avant le calme pt.1 v1.png"  />
                     <img src="societer chegg/avant le calme pt.1 v2.png"  />
@@ -86,11 +108,11 @@
                         de trouver des moyens de faire de la musique-archive métachimériste. Sorti le 1er septembre.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/avant-le-calme-pt1">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/avant-le-calme-pt1">écouter sur soundcloud!</a> <br />
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/avant-le-calme-pt-1">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="10" class="article actif">
                     <h1>EPMMPAÏS1 (mai 2025)</h1>
                     <img src="societer chegg/EPMMPAÏS1 v1.png"  />
                     <img src="societer chegg/EPMMPAÏS1 v2.png"  />
@@ -102,7 +124,7 @@
                         <a href="https://soundcloud.com/jeunechegg/sets/epmmpais1">écouter sur soundcloud!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="9" class="article actif">
                     <h1>freestyle MM (mars-mai 2025)</h1>
                     <img src="societer chegg/freestyle MM cover v1.png"  />
                     <img src="societer chegg/freestyle MM cover v2.png"  />
@@ -110,12 +132,12 @@
                         pas eu beaucoup de temps pour faire de la musique mais j'avais envie quand même de sortir des trucs donc j'ai juster expérimenté tranquillement dans ce projet. l'évolution sera marqué dans le marbre, chaque son est une pierre à un plus grand édifice. on reste branché
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/freestyle-mm">écouter sur soundcloud!</a>
-                        <a href="https://distrokid.com/hyperfollow/jeunechegg/freestyle-mm">écouter sur les plateformes!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/freestyle-mm">écouter sur soundcloud!</a> <br />
+                        <a href="https://distrokid.com/hyperfollow/jeunechegg/freestyle-mm">écouter sur les plateformes!</a> <br />
                         <a href="https://genius.com/Jeune-chegg-freestyle-mm2-lyrics">lire les paroles sur genius!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="8" class="article actif">
                     <h1>jeune alchimiste (2025)</h1>
                     <img src="societer chegg/jeune alchimiste jeune chegg v2.png"  />
                     <img src="societer chegg/jeune alchimiste jeune chegg.png"  />
@@ -124,11 +146,11 @@
                         3EME PROJET PUTAIN DE MERDE. DE BASE IL SAPPELAIT "RIEN A FOUTRE DE L'INDUSTRIE" MAIS VASY JAI CHANGé D'AVIS. PUTAIN DE COVER TU CONNAIS. ON VA PAS SARRETER LA PUTAIIIN.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/jeune-alchimiste">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/jeune-alchimiste">écouter sur soundcloud!</a> <br />
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/jeune-alchimiste">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="7" class="article actif">
                     <h1>Cheggtape volume 2 (2024)</h1>
                     <img src="societer chegg/cheggtape volume 2 alt version.png"  />
                     <img src="societer chegg/cheggtape volume 2.png"  />
@@ -136,11 +158,11 @@
                         Secondes Mixtape sur les plateformes. Des essaies de choses que j'aime qui rentre plus dans un mouvement et une couleur que j'aime, qui reste assez babillant.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/cheggtape-volume-2">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/cheggtape-volume-2">écouter sur soundcloud!</a> <br />
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/cheggtape-volume-2">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="6" class="article actif">
                     <h1>Cheggtape volume 1 (2023)</h1>
                     <img src="societer chegg/jeune chegg cheggtape volume 1 v3.png"  />
                     <img src="societer chegg/jeune chegg cheggtape volume 1.png"  />
@@ -150,11 +172,11 @@
                         Premier projet sorti sur les plateformes. Beaucoup d'experimentation que je voulais pas sortir à la base mais j'aurai été frustré de ne pas montré ce début. Avec le coeur.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/jeunechegg/sets/cheggtape-volume-1">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/jeunechegg/sets/cheggtape-volume-1">écouter sur soundcloud!</a> <br />
                         <a href="https://distrokid.com/hyperfollow/jeunechegg/cheggtape-volume-1">écouter sur les plateformes!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="5" class="article actif">
                     <h1>champignon triste (2023)</h1>
                     <img src="societer chegg/champignon triste.png"   />
                     <p>
@@ -164,7 +186,7 @@
                         <a href="https://soundcloud.com/mushroomparty/sets/champignons-tristes">écouter sur soundcloud!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="4" class="article actif">
                     <h1>LA FÊTE AUX CHAMPIGNONS (2023)</h1>
                     <img src="societer chegg/mushroom party.png"   />
                     <p>
@@ -174,7 +196,7 @@
                         <a href="https://soundcloud.com/mushroomparty/sets/la-fete-aux-champignons">écouter sur soundcloud!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="3" class="article actif">
                     <h1>placard ouvert (2023)</h1>
                     <img src="societer chegg/placard ouvert cover.png"   />
                     <p>
@@ -185,7 +207,7 @@
                         <a href="https://soundcloud.com/blipbloup/sets/placard-ouvert">écouter sur soundcloud!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="2" class="article actif">
                     <h1>LRISLATN (2023)</h1>
                     <img src="societer chegg/LRISLATN.png"   />
                     <img src="societer chegg/LRISLATN dos.png"   />
@@ -194,11 +216,11 @@
                         Un prémisse au EPMM en collaboration. sorti sur soundcloud.
                         <br/>
                         <br/>
-                        <a href="https://soundcloud.com/oznalii/sets/lrislatn">écouter sur soundcloud!</a>
+                        <a href="https://soundcloud.com/oznalii/sets/lrislatn">écouter sur soundcloud!</a> <br />
                         <a href="https://genius.com/albums/Oznali/Lrislatn">lire les paroles sur genius!</a>
                     </p>
                 </div>
-                <div id="article">
+                <div id="1" class="article actif">
                     <h1>3EPs perdus (2021-2023)</h1>
                     <img src="societer chegg/trois EPs.jpg"  />
                     <p>
@@ -207,6 +229,13 @@
                     </p>
                 </div>
             </div>     
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

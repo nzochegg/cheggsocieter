@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,35 +24,45 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2025</h2>
+                <a href="#" data-target="1">Studio Oppressant (2025)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
+                <div id="1" class="article actif">
                     <h1>Studio Oppressant (2025)</h1>
-                    <img src="societer chegg/studio oppressant/IMG_0079.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0080.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0081.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0082.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0083.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0084.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0097.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0085.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0086.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0087.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0088.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0089.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0090.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0091.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0092.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0093.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0094.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0095.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0096.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0098.png" width="200">
-                    <img src="societer chegg/studio oppressant/IMG_0099.png" width="200">
+                    <img src="societer chegg/studio oppressant/IMG_0079.png">
+                    <img src="societer chegg/studio oppressant/IMG_0080.png">
+                    <img src="societer chegg/studio oppressant/IMG_0081.png">
+                    <img src="societer chegg/studio oppressant/IMG_0082.png">
+                    <img src="societer chegg/studio oppressant/IMG_0083.png">
+                    <img src="societer chegg/studio oppressant/IMG_0084.png">
+                    <img src="societer chegg/studio oppressant/IMG_0097.png">
+                    <img src="societer chegg/studio oppressant/IMG_0085.png">
+                    <img src="societer chegg/studio oppressant/IMG_0086.png">
+                    <img src="societer chegg/studio oppressant/IMG_0087.png">
+                    <img src="societer chegg/studio oppressant/IMG_0088.png">
+                    <img src="societer chegg/studio oppressant/IMG_0089.png">
+                    <img src="societer chegg/studio oppressant/IMG_0090.png">
+                    <img src="societer chegg/studio oppressant/IMG_0091.png">
+                    <img src="societer chegg/studio oppressant/IMG_0092.png">
+                    <img src="societer chegg/studio oppressant/IMG_0093.png">
+                    <img src="societer chegg/studio oppressant/IMG_0094.png">
+                    <img src="societer chegg/studio oppressant/IMG_0095.png">
+                    <img src="societer chegg/studio oppressant/IMG_0096.png">
+                    <img src="societer chegg/studio oppressant/IMG_0098.png">
+                    <img src="societer chegg/studio oppressant/IMG_0099.png">
                     <p>
                         Petit shoot au milieu de cette putain de chambre miteuse de merde pendant que je programmais une appli. Je galèrais j'en pouvais plus, ça m'a épuisé physiquement et mentalement cette merde
                     </p>
                 </div>
             </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

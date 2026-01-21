@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,8 +24,14 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2025</h2>
+                <a href="#" data-target="2">chegg flex (2025)</a> <br/>
+                <h2>2024</h2>
+                <a href="#" data-target="1">Lettre ouverte à la France (2024)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
+                <div id="2" class="article actif">
                     <h1>chegg flex (2025)</h1>
                      <iframe width="840" height="630"
                     src="https://www.youtube.com/embed/saL569p56W8">
@@ -33,7 +40,7 @@
                         yooooo mec tu flex a fond j'ai l'impression.
                     </p>
                 </div>
-                <div id="article">
+                <div id="1" class="article">
                     <h1>Lettre ouverte à la France (2024)</h1>
                      <iframe width="840" height="630"
                     src="https://www.youtube.com/embed/iZShP31T4-Y">
@@ -43,6 +50,12 @@
                     </p>
                 </div>
             </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

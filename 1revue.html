@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -87,7 +88,7 @@
                                     if (imgIndex < images.length) {
                                         const img = document.createElement('img');
                                         img.src = images[imgIndex];
-                                        img.style.width = '750px';
+                                        img.style.width = '400px';
                                         img.style.height = 'auto';
                                         viewer.appendChild(img);
                                     }
@@ -96,7 +97,7 @@
                                 const imgIndex = currentPage;
                                 const img = document.createElement('img');
                                 img.src = images[imgIndex];
-                                img.style.width = '750px';
+                                img.style.width = '400px';
                                 img.style.height = 'auto';
                                 viewer.appendChild(img);
                             }
@@ -126,6 +127,12 @@
                         updateViewer();
                 </script>
             </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

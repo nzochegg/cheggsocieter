@@ -73,6 +73,8 @@
 	flex-direction: row;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	justify-content: center;
+	width: 70%;
 }
 
 #accueil div {
@@ -81,29 +83,42 @@
 	background-color: rgb(189, 122, 126);
 	margin: 10px;
 	padding: 15px;
+	width: 100%;
 }
 
-#article p {
+.article {
+	display: none;
+}
+
+.article.actif {
+	display: block;
+}
+
+.article p {
 	text-decoration: none;
 	color: rgb(243, 219, 243);
 	font-size: 25px;
 }
 
-#article h1 {
+.article h1 {
 	text-decoration: none;
 	color: rgb(243, 219, 243);
 	font-size: 40px;
 }
 
-#article a {
+.article a {
 	text-decoration: none;
 	color: rgb(255, 248, 255);
 	font-size: 30px;
 	background-color: rgb(103, 147, 6, 1.0);
 }
 
-#article img {
-	width: 15%;
+.article img {
+	width: 150px;
+}
+
+.article img:hover {
+	border: 2px solid black;
 }
 
 .textecache {
@@ -113,6 +128,7 @@
 button {
 	text-decoration: none;
 	border: 5px solid black;
+	font-size: 45px;
 }
 
 /* général body */
@@ -125,6 +141,7 @@ button {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	justify-content: space-between;
 }
 
 #sidebar_spec {
@@ -132,5 +149,78 @@ button {
 	background-color: rgb(255, 255, 255);
 	padding: 10px;
 	margin: 10px;
-	width: 10%;
+	width: 8%;
+}
+
+.liste_lien {
+	background-color: rgb(255, 255, 255);
+	margin: 10px;
+}
+
+.liste_lien a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.liste_lien a:hover {
+	text-shadow: black;
+	text-decoration: underline;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.viewer img:hover {
+	border: 5px solid black;
 }

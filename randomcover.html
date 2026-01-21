@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -23,12 +24,31 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <h2>2023</h2>
+                <a href="#" data-target="1">Galerie (juin 2023)</a> <br/>
+            </div>
             <div id=accueil>
-                <div id="article">
-                    <h1>Galerie (202?-2025)</h1>
-                    <img src="cover/au pays de voltaire.png" width="350" />
+                <div id="1" class="article actif">
+                    <h1>Galerie (juin 2023)</h1>
+                    <img src="cover/au pays de voltaire.png">
+                    <img src="cover/fuck you jsp.png">
+                    <img src="cover/jai vu les trains silencieux v2.png">
+                    <img src="cover/je ne savais pas que vous vous interressiez a la politique v2.png">
+                    <img src="cover/je sui un geek.png">
+                    <img src="cover/le sel l'amour le désire.png">
+                    <img src="cover/LEAK.png">
+                    <img src="cover/siècle des lumiere.png">
+                    <img src="cover/VAGUE A LAME.png">
                 </div>
             </div>     
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 
