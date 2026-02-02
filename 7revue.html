@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nzochegg</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
+        <script> 
+            $(function(){
+                $("#sidebarload").load("sidebar.html"); 
+                $("#headerload").load("header.html"); 
+                $("#footerload").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <div id="headerload"></div>
+
+    <body id="body">
+        <div id="sidebar">
+            <div id="sidebar_spec">
+                <div id="lien_side">
+                    <div id="sidebarload"></div>
+                </div>
+            </div>
+            <div class="liste_lien">
+                <h2>metachim7</h2>
+                <a href="#" data-target="1">Page Couverture</a> <br/>
+                <a href="#" data-target="2">Pages 1-2</a> <br/>
+                <a href="#" data-target="3">Pages 3-4</a> <br/>
+                <a href="#" data-target="4">Pages 5-6</a> <br/>
+                <a href="#" data-target="5">Pages 7-8</a> <br/>
+                <a href="#" data-target="6">Pages 9-10</a> <br/>
+                <a href="#" data-target="7">Pages 11-12</a> <br/>
+                <a href="#" data-target="8">Pages 13-14</a> <br/>
+                <a href="#" data-target="9">Pages 15-16</a> <br/>
+                <a href="#" data-target="10">Pages 17-18</a> <br/>
+                <a href="#" data-target="11">Pages 19-20</a> <br/>
+                <a href="#" data-target="12">Pages 21-22</a> <br/>
+                <a href="#" data-target="13">Pages 23-24</a> <br/>
+                <a href="#" data-target="14">Pages 25-26</a> <br/>
+                <a href="#" data-target="15">Pages 27-28</a> <br/>
+                <a href="#" data-target="16">Pages 29-30</a> <br/>
+                <a href="#" data-target="17">Pages de fin</a> <br/>
+            </div>
+            <div id=accueil>
+                <div id="1" class="article metachim actif">
+                    <h1>Page Couverture</h1>
+                    <img src="metachim7/1.png">
+                </div>
+                <div id="2" class="article metachim">
+                    <h1>Pages 1-2</h1>
+                    <img src="metachim7/2.png">
+                    <img src="metachim7/3.png">
+                </div>
+                <div id="3" class="article metachim">
+                    <h1>Pages 3-4</h1>
+                    <img src="metachim7/4.png">
+                    <img src="metachim7/5.png">
+                </div>
+                <div id="4" class="article metachim">
+                    <h1>Pages 5-6</h1>
+                    <img src="metachim7/6.png">
+                    <img src="metachim7/7.png">
+                </div>
+                <div id="5" class="article metachim">
+                    <h1>Pages 7-8</h1>
+                    <img src="metachim7/8.png">
+                    <img src="metachim7/9.png">
+                </div>
+                <div id="6" class="article metachim">
+                    <h1>Pages 9-10</h1>
+                    <img src="metachim7/10.png">
+                    <img src="metachim7/11.png">
+                </div>
+                <div id="7" class="article metachim">
+                    <h1>Pages 11-12</h1>
+                    <img src="metachim7/12.png">
+                    <img src="metachim7/13.png">
+                </div>
+                <div id="8" class="article metachim">
+                    <h1>Pages 13-14</h1>
+                    <img src="metachim7/14.png">
+                    <img src="metachim7/15.png">
+                </div>
+                <div id="9" class="article metachim">
+                    <h1>Pages 15-16</h1>
+                    <img src="metachim7/16.png">
+                    <img src="metachim7/17.png">
+                </div>
+                <div id="10" class="article metachim">
+                    <h1>Pages 17-18</h1>
+                    <img src="metachim7/18.png">
+                    <img src="metachim7/19.png">
+                </div>
+                <div id="11" class="article metachim">
+                    <h1>Pages 19-20</h1>
+                    <img src="metachim7/20.png">
+                    <img src="metachim7/21.png">
+                </div>
+                <div id="12" class="article metachim">
+                    <h1>Pages 21-22</h1>
+                    <img src="metachim7/22.png">
+                    <img src="metachim7/23.png">
+                </div>
+                <div id="13" class="article metachim">
+                    <h1>Pages 23-24</h1>
+                    <img src="metachim7/24.png">
+                    <img src="metachim7/25.png">
+                </div>
+                <div id="14" class="article metachim">
+                    <h1>Pages 25-26</h1>
+                    <img src="metachim7/26.png">
+                    <img src="metachim7/27.png">
+                </div>
+                <div id="15" class="article metachim">
+                    <h1>Pages 27-28</h1>
+                    <img src="metachim7/28.png">
+                    <img src="metachim7/29.png">
+                </div>
+                <div id="16" class="article metachim">
+                    <h1>Pages 29-30</h1>
+                    <img src="metachim7/30.png">
+                    <img src="metachim7/31.png">
+                </div>
+                <div id="17" class="article metachim">
+                    <h1>Pages de fin</h1>
+                    <img src="metachim7/32.png">
+                </div>
+            </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </body>
+
+    <div id="footerload"></div>
+
+</html>
