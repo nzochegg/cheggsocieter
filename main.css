@@ -123,10 +123,10 @@
 	font-size: 25px;
 }
 .article p:hover {
-	animation-duration: 3s;
+	/*animation-duration: 3s;
 	animation-name: arcciel;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation-direction: alternate;*/
 }
 
 .article h1 {
@@ -270,4 +270,13 @@ a {
 
 .viewer img:hover {
 	border: 5px solid black;
+}
+
+
+/* content dessin */
+
+.numerotation {
+	text-decoration: none;
+	color: rgb(243, 219, 243);
+	font-size: 25px;
 }
