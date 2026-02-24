@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     links.forEach(link => {
         link.addEventListener('click', e => {
-            e.preventDefault();
 
             panels.forEach(p => p.classList.remove('actif'));
 

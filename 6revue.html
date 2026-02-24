@@ -24,107 +24,113 @@
                     <div id="sidebarload"></div>
                 </div>
             </div>
+            <div class="liste_lien">
+                <a href="revues.html">← revenir aux revues</a>
+                <h2>metachim6</h2>
+                <a href="#" data-target="1">Page Couverture</a> <br/>
+                <a href="#" data-target="2">Pages 1-2</a> <br/>
+                <a href="#" data-target="3">Pages 3-4</a> <br/>
+                <a href="#" data-target="4">Pages 5-6</a> <br/>
+                <a href="#" data-target="5">Pages 7-8</a> <br/>
+                <a href="#" data-target="6">Pages 9-10</a> <br/>
+                <a href="#" data-target="7">Pages 11-12</a> <br/>
+                <a href="#" data-target="8">Pages 13-14</a> <br/>
+                <a href="#" data-target="9">Pages 15-16</a> <br/>
+                <a href="#" data-target="10">Pages 17-18</a> <br/>
+                <a href="#" data-target="11">Pages 19-20</a> <br/>
+                <a href="#" data-target="12">Pages 21-22</a> <br/>
+                <a href="#" data-target="13">Pages 23-24</a> <br/>
+                <a href="#" data-target="14">Pages 25-26</a> <br/>
+                <a href="#" data-target="15">Pages 27-28</a> <br/>
+                <a href="#" data-target="16">Pages 29-30</a> <br/>
+                <a href="#" data-target="17">Pages de fin</a> <br/>
+            </div>
             <div id=accueil>
-                <div class="buttons">
-                    <button id="prevBtn">←</button>
-                    <button id="nextBtn">→</button>
+                <div id="1" class="article metachim actif">
+                    <h1>Page Couverture</h1>
+                    <img src="metachim6/1.png">
                 </div>
-
-                <div class="viewer" id="imageViewer" style="display: flex; justify-content: 'center';">
-                    <!-- Les images seront insérées ici dynamiquement -->
+                <div id="2" class="article metachim">
+                    <h1>Pages 1-2</h1>
+                    <img src="metachim6/2.png">
+                    <img src="metachim6/3.png">
                 </div>
-
-                <script>
-                        const images = [
-                          'metachim6/1.png',
-                          'metachim6/2.png',
-                          'metachim6/3.png',
-                          'metachim6/4.png',
-                          'metachim6/5.png',
-                          'metachim6/6.png',
-                          'metachim6/7.png',
-                          'metachim6/8.png',
-                          'metachim6/9.png',
-                          'metachim6/10.png',
-                          'metachim6/11.png',
-                          'metachim6/12.png',
-                          'metachim6/13.png',
-                          'metachim6/14.png',
-                          'metachim6/15.png',
-                          'metachim6/16.png',
-                          'metachim6/17.png',
-                          'metachim6/18.png',
-                          'metachim6/19.png',
-                          'metachim6/20.png',
-                          'metachim6/21.png',
-                          'metachim6/22.png',
-                          'metachim6/23.png',
-                          'metachim6/24.png',
-                          'metachim6/25.png',
-                          'metachim6/26.png',
-                          'metachim6/27.png',
-                          'metachim6/28.png',
-                          'metachim6/29.png',
-                          'metachim6/30.png',
-                          'metachim6/31.png',
-                          'metachim6/32.png',
-                        ];
-
-                        let currentPage = 0;
-                        const viewer = document.getElementById('imageViewer');
-                        const prevBtn = document.getElementById('prevBtn');
-                        const nextBtn = document.getElementById('nextBtn');
-
-                        function updateViewer() {
-                            viewer.innerHTML = '';
-
-                            if (currentPage != 0) {
-                                for (let i = 0; i < 2; i++) {
-                                    const imgIndex = currentPage + i;
-                                    if (imgIndex < images.length) {
-                                        const img = document.createElement('img');
-                                        img.src = images[imgIndex];
-                                        img.style.width = '400px';
-                                        img.style.height = 'auto';
-                                        viewer.appendChild(img);
-                                    }
-                                }
-                            } else {
-                                const imgIndex = currentPage;
-                                const img = document.createElement('img');
-                                img.src = images[imgIndex];
-                                img.style.width = '400px';
-                                img.style.height = 'auto';
-                                viewer.appendChild(img);
-                            }
-
-                          prevBtn.disabled = currentPage === 0;
-                          nextBtn.disabled = (currentPage + 1) >= images.length;
-                        }
-
-                        prevBtn.addEventListener('click', () => {
-                            if (currentPage > 0) {
-                                currentPage-=2;  
-                                updateViewer();
-                            }
-                        });
-
-                        nextBtn.addEventListener('click', () => {
-                            if ((currentPage + 1) < images.length) {
-                                if (currentPage != 0) {
-                                    currentPage+=2;
-                                } else {  
-                                    currentPage++;
-                                }
-                                updateViewer();
-                            }
-                        });
-
-                        updateViewer();
-                </script>
+                <div id="3" class="article metachim">
+                    <h1>Pages 3-4</h1>
+                    <img src="metachim6/4.png">
+                    <img src="metachim6/5.png">
+                </div>
+                <div id="4" class="article metachim">
+                    <h1>Pages 5-6</h1>
+                    <img src="metachim6/6.png">
+                    <img src="metachim6/7.png">
+                </div>
+                <div id="5" class="article metachim">
+                    <h1>Pages 7-8</h1>
+                    <img src="metachim6/8.png">
+                    <img src="metachim6/9.png">
+                </div>
+                <div id="6" class="article metachim">
+                    <h1>Pages 9-10</h1>
+                    <img src="metachim6/10.png">
+                    <img src="metachim6/11.png">
+                </div>
+                <div id="7" class="article metachim">
+                    <h1>Pages 11-12</h1>
+                    <img src="metachim6/12.png">
+                    <img src="metachim6/13.png">
+                </div>
+                <div id="8" class="article metachim">
+                    <h1>Pages 13-14</h1>
+                    <img src="metachim6/14.png">
+                    <img src="metachim6/15.png">
+                </div>
+                <div id="9" class="article metachim">
+                    <h1>Pages 15-16</h1>
+                    <img src="metachim6/16.png">
+                    <img src="metachim6/17.png">
+                </div>
+                <div id="10" class="article metachim">
+                    <h1>Pages 17-18</h1>
+                    <img src="metachim6/18.png">
+                    <img src="metachim6/19.png">
+                </div>
+                <div id="11" class="article metachim">
+                    <h1>Pages 19-20</h1>
+                    <img src="metachim6/20.png">
+                    <img src="metachim6/21.png">
+                </div>
+                <div id="12" class="article metachim">
+                    <h1>Pages 21-22</h1>
+                    <img src="metachim6/22.png">
+                    <img src="metachim6/23.png">
+                </div>
+                <div id="13" class="article metachim">
+                    <h1>Pages 23-24</h1>
+                    <img src="metachim6/24.png">
+                    <img src="metachim6/25.png">
+                </div>
+                <div id="14" class="article metachim">
+                    <h1>Pages 25-26</h1>
+                    <img src="metachim6/26.png">
+                    <img src="metachim6/27.png">
+                </div>
+                <div id="15" class="article metachim">
+                    <h1>Pages 27-28</h1>
+                    <img src="metachim6/28.png">
+                    <img src="metachim6/29.png">
+                </div>
+                <div id="16" class="article metachim">
+                    <h1>Pages 29-30</h1>
+                    <img src="metachim6/30.png">
+                    <img src="metachim6/31.png">
+                </div>
+                <div id="17" class="article metachim">
+                    <h1>Pages de fin</h1>
+                    <img src="metachim6/32.png">
+                </div>
             </div>     
         </div>
-
         <!-- The Modal -->
         <div id="myModal" class="modal">
           <span class="close">×</span>
