@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             panels.forEach(p => p.classList.remove('actif'));
 
-            const target = document.getElementById(link.dataset.target);
-            target.classList.add('actif');
+            const targets = document.querySelectorAll(`[id="${link.dataset.target}"]`);
+            targets.forEach(t => t.classList.add('actif'));
         });
     });
 });
