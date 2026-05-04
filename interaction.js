@@ -1,5 +1,8 @@
+$(document).ready(function() {
+    document.getElementById(window.location.hash.substring(1)).click()
+})
+
 document.addEventListener("DOMContentLoaded", function () {
-    
     var modal = document.getElementById('myModal');
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function() { 
@@ -12,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll('.liste_lien a');
     const panels = document.querySelectorAll('.article');
 
+    modal.addEventListener('click', function () {
+        modal.style.display = "none";
+    });
 
     var i;
     for (i = 0; i < images.length; i++) {
