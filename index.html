@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
         <script> 
             $(function(){
                 $("#sidebarload").load("sidebar.html"); 
@@ -33,7 +34,52 @@
                        dommage pour vous les losers.
                     </p>
                 </div>
+                <div class="article actif">
+                    <h1>Aperçu de quelques réalisation sur le site.</h1>
+                    <div id="apercu">
+                        <script>
+                        var requetes = [
+                            $.get('dessin.html'),
+                            $.get('design.html'),
+                            $.get('objets.html'),
+                            $.get('ecrits.html'),
+                            $.get('metachim.html'),
+                            $.get('galerie.html')
+                        ];
+
+                        for (let i = 1; i <= 8; i++) {
+                            requetes.push($.get(i + 'revue.html'));
+                        }
+
+                        $.when.apply($, requetes).done(function() {
+
+                            var $total = $();
+
+                            for (let i = 0; i < arguments.length; i++) {
+                                var html = arguments[i][0];
+
+                                if (i <= 2) {
+                                    $total = $total.add($(html).find('img').parent());
+                                } else {
+                                    $total = $total.add($(html).find('img'));
+                                }
+                            }
+
+                            $('#apercu').append($total[Math.floor(Math.random() * $total.length)]);
+                            $('#apercu').append($total[Math.floor(Math.random() * $total.length)]);
+                            $('#apercu').append($total[Math.floor(Math.random() * $total.length)]);
+                            $('#apercu').append($total[Math.floor(Math.random() * $total.length)]);
+                        });
+                        </script>
+                    </div>
+                </div>
             </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
     </body>
 

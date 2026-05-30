@@ -2,6 +2,13 @@ $(document).ready(function() {
     document.getElementById(window.location.hash.substring(1)).click()
 })
 
+document.addEventListener('change', (event) => {
+    console.log(event.target.id)
+    if (event.target.id === 'NCustType') {
+        console.log("prout")
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById('myModal');
     var span = document.getElementsByClassName("close")[0];
@@ -11,6 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
     var images = document.getElementsByClassName('imgrande');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
+
+    var galerieapercu = document.getElementById("apercu");
+    apercu.addEventListener("click", e => {
+        var images = document.getElementsByClassName('imgrande');
+        var i;
+        for (i = 0; i < images.length; i++) {
+            document.addEventListener('click', function (e) {
+                if (e.target.tagName === 'IMG') {
+                    modal.style.display = "block";
+                    modalImg.src = e.target.src;
+                    captionText.innerHTML = e.target.nextElementSibling?.innerHTML || "";
+                }
+
+            });
+        }
+    });
 
     const links = document.querySelectorAll('.liencache');
     const panels = document.querySelectorAll('.article');

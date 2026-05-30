@@ -345,6 +345,11 @@ a {
 	border: 5px solid black;
 }
 
+#apercu {
+	display: flex;
+	flex-direction: row;
+}
+
 /* content dessin */
 
 .numerotation {
