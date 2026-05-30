@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nzochegg</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
+        <script> 
+            $(function(){
+                $("#sidebarload").load("sidebar.html"); 
+                $("#headerload").load("header.html"); 
+                $("#footerload").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <div id="headerload"></div>
+
+    <body id="body">
+        <div id="contenusite">
+            <div id="sidebar_spec">
+                <div id="lien_side">
+                    <div id="sidebarload"></div>
+                </div>
+            </div>
+            <div class="liste_lien">
+                <a href="#" class="toutvoir">tout afficher</a>
+                <h2>2025</h2>                
+                <a id="zinedcembre2025" href="#zinedcembre2025" data-target="zinedcembre2025" class="liencache">zine (décembre 2025)</a> <br/>
+                <a id="zinerecherchecadrelaissezmoisortirnovembre2025" href="#zinerecherchecadrelaissezmoisortirnovembre2025" data-target="zinerecherchecadrelaissezmoisortirnovembre2025" class="liencache">zine recherche cadre laissez moi sortir (novembre 2025)</a> <br/>
+                <a id="zinerecherchetexturemouillnovembre2025" href="#zinerecherchetexturemouillnovembre2025" data-target="zinerecherchetexturemouillnovembre2025" class="liencache">zine recherche texture mouillé (novembre 2025)</a> <br/>
+            </div>
+            <div class="corpcontenu">
+                <div id="zinedcembre2025" class="article actif">
+                    <h1>zine (décembre 2025)</h1>
+                    <a href="archive/zinedecembre2025.html"><img src="archive/zine (décembre 2025)/0. Sans titre, feutre noir fin (décembre 2025).png" width="300"></a>
+                </div>
+                <div id="zinerecherchecadrelaissezmoisortirnovembre2025" class="article actif">
+                    <h1>zine recherche cadre laissez moi sortir (novembre 2025)</h1>
+                    <a href="archive/zinerecherchecadrelaissezmoisortirnovembre2025.html"><img  src="archive/zine recherche cadre laissez moi sortir (novembre 2025)/0. couverture dormir, marker (novembre 2025).png" width="300"></a>
+                </div>
+                <div id="zinerecherchetexturemouillnovembre2025" class="article actif">
+                    <h1>zine recherche texture mouillé (novembre 2025)</h1>
+                    <a href="archive/zinerecherchetexturemouillnovembre2025"><img src="archive/zine recherche texture mouillé (novembre 2025)/0. couverture sèche 1, mouillé (novembre 2025).png" width="300"></a>
+                </div>
+
+
+            </div>     
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </body>
+
+    <div id="footerload"></div>
+
+</html>

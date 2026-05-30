@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
     span.onclick = function() { 
         modal.style.display = "none";
     }
-    var images = document.getElementsByTagName('img');
+    var images = document.getElementsByClassName('imgrande');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
 
-    const links = document.querySelectorAll('.liste_lien a');
+    const links = document.querySelectorAll('.liencache');
     const panels = document.querySelectorAll('.article');
+
+    const toutafficher = document.querySelectorAll('.toutvoir')
+    const cats = document.querySelectorAll('.cat')
 
     modal.addEventListener('click', function () {
         modal.style.display = "none";
@@ -40,4 +43,27 @@ document.addEventListener("DOMContentLoaded", function () {
             targets.forEach(t => t.classList.add('actif'));
         });
     });
+
+    toutafficher.forEach(link => {
+        link.addEventListener('click', e =>{
+            
+            panels.forEach(p => p.classList.add('actif'));
+
+        });
+    });
+
+    cats.forEach(cat => {
+        cat.addEventListener('click', e =>{
+            const selectedCat = cat.dataset.cat;
+            panels.forEach(panel => {
+                if (panel.dataset.cat === selectedCat) {
+                    panel.classList.add('actif');
+                } else {
+                    panel.classList.remove('actif');
+                }
+            });
+
+        });
+    });
+
 });

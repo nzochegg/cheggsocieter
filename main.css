@@ -35,14 +35,19 @@
 	text-align: center;
 }
 
-#liens {
+#titre a {
+	text-decoration: none;
+	color: black;
+}
+
+.liens {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	font-size: 25px;
 }
 
-#liens a {
+.liens a {
 	text-decoration: none;
 	text-align: center;
 	color: green;
@@ -51,14 +56,17 @@
 	background-color: rgb(250, 235, 250);
 }
 
-#liens a:hover {
+.liens a:hover {
 	background-color: purple;
 }
 
 #shitpost_gratos {
 	position: fixed;
 	top: 0;
-	bottom: 0;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
 }
 
 /* footer */
@@ -75,6 +83,7 @@
 #lien_side {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 #lien_side a {
@@ -82,25 +91,37 @@
 	text-align: center;
 	color: green;
 	padding: 10px;
-	font-size: 25px;
+	font-size: 1.5em;
 }
 
 #lien_side a:hover {
 	background-color: purple;
 }
 
+#contenusite {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+#sidebar_spec {
+	border: 5px groove rgb(142, 25, 102, 0.3);
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	margin: 10px;
+	width: 8vw;
+	position: sticky;
+	top: 10px;
+}
 /* content accueil */
 
-#accueil {
+.corpcontenu {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	justify-content: center;
-	width: 70%;
-}
-
-#accueil {
+	width: 70vw;
 }
 
 .article {
@@ -114,14 +135,15 @@
 	background-color: rgb(189, 122, 126);
 	margin: 10px;
 	padding: 15px;
-	width: 100%;
 }
 
 .article p {
 	text-decoration: none;
 	color: rgb(243, 219, 243);
 	font-size: 25px;
+	max-width: 75ch;
 }
+
 .article p:hover {
 	/*animation-duration: 3s;
 	animation-name: arcciel;
@@ -143,6 +165,10 @@
 }
 
 .article img {
+	width: 250px;
+}
+
+.imgrevue img {
 	width: 350px;
 }
 
@@ -193,6 +219,28 @@
 	width: 200px;
 }
 
+.date {
+	font-size: 10px;
+	color: rgb(243, 219, 243);
+	justify-content: center;
+	text-align: center;
+	margin: 0px;
+	font-style: italic;
+	line-break: auto;
+	width: 200px;
+}
+
+.collab {
+	font-size: 10px;
+	color: rgb(243, 219, 243);
+	justify-content: center;
+	text-align: center;
+	margin: 0px;
+	font-style: italic;
+	line-break: auto;
+	width: 200px;
+}
+
 button {
 	text-decoration: none;
 	border: 5px solid black;
@@ -223,24 +271,12 @@ a {
 	cursor: url("pointer2.png"), pointer;
 }
 
-#sidebar {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: space-between;
-}
-
-#sidebar_spec {
-	border: 5px groove rgb(142, 25, 102, 0.3);
-	background-color: rgb(255, 255, 255);
-	padding: 10px;
-	margin: 10px;
-	width: 8%;
-}
-
 .liste_lien {
 	background-color: rgb(255, 255, 255);
 	margin: 10px;
+	width: 20vw;
+	position: sticky;
+	top: 20px;
 }
 
 .liste_lien a {
@@ -256,20 +292,20 @@ a {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
 }
 
-/* Modal Content (image) */
+
 .modal-content {
   margin: auto;
   display: block;
@@ -277,7 +313,6 @@ a {
   max-width: 1000px;
 }
 
-/* Caption of Modal Image */
 #caption {
   margin: auto;
   display: block;
@@ -289,7 +324,6 @@ a {
   height: 150px;
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -310,7 +344,6 @@ a {
 .viewer img:hover {
 	border: 5px solid black;
 }
-
 
 /* content dessin */
 
