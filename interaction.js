@@ -20,20 +20,24 @@ document.addEventListener("DOMContentLoaded", function () {
     var captionText = document.getElementById("caption");
 
     var galerieapercu = document.getElementById("apercu");
-    apercu.addEventListener("click", e => {
-        var images = document.getElementsByClassName('imgrande');
-        var i;
-        for (i = 0; i < images.length; i++) {
-            document.addEventListener('click', function (e) {
-                if (e.target.tagName === 'IMG') {
-                    modal.style.display = "block";
-                    modalImg.src = e.target.src;
-                    captionText.innerHTML = e.target.nextElementSibling?.innerHTML || "";
-                }
-
-            });
-        }
-    });
+    try {
+        galerieapercu.addEventListener("click", e => {
+            var images = document.getElementsByClassName('imgrande');
+            var i;
+            for (i = 0; i < images.length; i++) {
+                document.addEventListener('click', function (e) {
+                    if (e.target.tagName === 'IMG') {
+                        modal.style.display = "block";
+                        modalImg.src = e.target.src;
+                        captionText.innerHTML = e.target.nextElementSibling?.innerHTML || "";
+                    }
+                });
+            }
+        });
+    } catch (error) {
+        console.log(error)
+    }
+    
 
     const links = document.querySelectorAll('.liencache');
     const panels = document.querySelectorAll('.article');
