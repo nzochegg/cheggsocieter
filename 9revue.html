@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nzochegg</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="interaction.js"></script>
+        <script> 
+            $(function(){
+                $("#sidebarload").load("sidebar.html"); 
+                $("#headerload").load("header.html"); 
+                $("#footerload").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <div id="headerload"></div>
+
+    <body id="body">
+        <div id="contenusite">
+            <div id="sidebar_spec">
+                <div id="lien_side">
+                    <div id="sidebarload"></div>
+                </div>
+            </div>
+            <div class="liste_lien">
+                <a href="revues.html">← revenir aux revues</a> <br/>
+                <hr/>
+                <a href="#" class="toutvoir">tout afficher</a>
+                <h2>metachim9</h2>
+                <a href="#" data-target="1" class="liencache">Page Couverture</a> <br/>
+                <a href="#" data-target="2" class="liencache">Pages 1-2</a> <br/>
+                <a href="#" data-target="3" class="liencache">Pages 3-4</a> <br/>
+                <a href="#" data-target="4" class="liencache">Pages 5-6</a> <br/>
+                <a href="#" data-target="5" class="liencache">Pages 7-8</a> <br/>
+                <a href="#" data-target="6" class="liencache">Pages 9-10-11</a> <br/>
+            </div>
+            <div class="corpcontenu">
+                <div id="1" class="article imgrevue actif">
+                    <h1>Page Couverture</h1>
+                    <img class="imgrande" src="metachim9/1.png">
+                </div>
+                <div id="2" class="article imgrevue">
+                    <h1>Pages 1-2</h1>
+                    <img class="imgrande" src="metachim9/2.png"><img class="imgrande" src="metachim9/3.png">
+                </div>
+                <div id="3" class="article imgrevue">
+                    <h1>Pages 3-4</h1>
+                    <img class="imgrande" src="metachim9/4.png"><img class="imgrande" src="metachim9/5.png">
+                </div>
+                <div id="4" class="article imgrevue">
+                    <h1>Pages 5-6</h1>
+                    <img class="imgrande" src="metachim9/6.png"><img class="imgrande" src="metachim9/7.png">
+                </div>
+                <div id="5" class="article imgrevue">
+                    <h1>Pages 7-8</h1>
+                    <img class="imgrande" src="metachim9/8.png"><img class="imgrande" src="metachim9/9.png">
+                </div>
+                <div id="6" class="article imgrevue">
+                    <h1>Pages 9-10-11</h1>
+                    <img class="imgrande" src="metachim9/10.png"><img class="imgrande" src="metachim9/11.png"><img class="imgrande" src="metachim9/12.png">
+                </div>
+            </div>     
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </body>
+
+    <div id="footerload"></div>
+
+</html>

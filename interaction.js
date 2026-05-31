@@ -39,8 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 
-    const links = document.querySelectorAll('.liencache');
-    const panels = document.querySelectorAll('.article');
+    const links_article = document.querySelectorAll('.liencache');
+    const articles = document.querySelectorAll('.article');
+
+    const sous_links_article = document.querySelectorAll('.sousliencache');
+    const sous_articles = document.querySelectorAll('.sousarticle');
 
     const toutafficher = document.querySelectorAll('.toutvoir')
     const cats = document.querySelectorAll('.cat')
@@ -61,10 +64,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    links.forEach(link => {
+    links_article.forEach(link => {
         link.addEventListener('click', e => {
 
-            panels.forEach(p => p.classList.remove('actif'));
+            articles.forEach(p => p.classList.remove('actif'));
+            sous_articles.forEach(p => p.classList.remove('actif'));
+
+            const targets = document.querySelectorAll(`[id="${link.dataset.target}"]`);
+            targets.forEach(t => t.classList.add('actif'));
+        });
+    });
+
+    sous_links_article.forEach(link => {
+        link.addEventListener('click', e => {
+
+            sous_articles.forEach(p => p.classList.remove('actif'));
 
             const targets = document.querySelectorAll(`[id="${link.dataset.target}"]`);
             targets.forEach(t => t.classList.add('actif'));
@@ -74,7 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
     toutafficher.forEach(link => {
         link.addEventListener('click', e =>{
             
-            panels.forEach(p => p.classList.add('actif'));
+            articles.forEach(p => p.classList.add('actif'));
+            sous_articles.forEach(p => p.classList.remove('actif'));
 
         });
     });
@@ -82,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cats.forEach(cat => {
         cat.addEventListener('click', e =>{
             const selectedCat = cat.dataset.cat;
-            panels.forEach(panel => {
+            articles.forEach(panel => {
                 if (panel.dataset.cat === selectedCat) {
                     panel.classList.add('actif');
                 } else {
