@@ -205,6 +205,13 @@
 	width: 200px;
 }
 
+blockquote {
+	font-size: 2em;
+	color: rgb(29, 48, 29);
+	background-image: url("assets/ciel.png");
+	background-size: cover;
+	text-shadow: 0px 0px 10px white;
+}
 
 .imgrevue img {
 	width: 350px;
@@ -411,4 +418,8 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+#petiteimage {
+	width: 100px;
 }
