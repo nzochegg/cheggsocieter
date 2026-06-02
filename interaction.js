@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    document.getElementById(window.location.hash.substring(1)).click()
+    var $hashtag = window.location.hash.substring(1)
+    document.querySelectorAll('[data-target=\''+$hashtag+'\']')[0].click()
 })
 
 document.addEventListener('change', (event) => {
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
     });
 
+    var current_images = 0;
     var i;
     for (i = 0; i < images.length; i++) {
         document.addEventListener('click', function (e) {
@@ -59,10 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 modal.style.display = "block";
                 modalImg.src = e.target.src;
                 captionText.innerHTML = e.target.nextElementSibling?.innerHTML || "";
+                current_images = Array.from(images).indexOf(e.target)
+                console.log(current_images);
             }
-
         });
     }
+    
+    document.addEventListener("keydown", function (event) {
+        if (event.code === "ArrowRight") {
+            if (current_images < images.length - 1)
+            current_images = current_images + 1
+            modalImg.src = images[current_images].src;
+        }
+        if (event.code === "ArrowLeft") {
+            if (current_images > 0)
+            current_images = current_images - 1
+            modalImg.src = images[current_images].src;
+        }
+    });
 
     links_article.forEach(link => {
         link.addEventListener('click', e => {

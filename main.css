@@ -144,6 +144,13 @@
 	max-width: 75ch;
 }
 
+.article li {
+	text-decoration: none;
+	color: rgb(243, 219, 243);
+	font-size: 25px;
+	max-width: 75ch;
+}
+
 .article p:hover {
 	/*animation-duration: 3s;
 	animation-name: arcciel;
@@ -354,8 +361,9 @@ a {
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 1fr;
   max-width: 1000px;
+  max-height: 800px;
 }
 
 #caption {
@@ -422,4 +430,14 @@ tr:nth-child(even) {
 
 #petiteimage {
 	width: 100px;
+}
+
+/* catégorie de lien */
+
+.liste_lien a.jc {
+	color: rgb(124, 0, 0);
+}
+
+.liste_lien a.ami {
+	color: rgb(0, 117, 16);
 }
