@@ -447,3 +447,11 @@ tr:nth-child(even) {
 .liste_lien a.ami {
 	color: rgb(0, 117, 16);
 }
+
+.liste_lien a.ytnzo {
+	color: rgb(255, 41, 41);
+}
+
+.liste_lien a.courtmetrage {
+	color: rgb(122, 24, 183);
+}
