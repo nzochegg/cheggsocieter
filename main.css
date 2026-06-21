@@ -150,13 +150,13 @@
 	font-size: 25px;
 	max-width: 75ch;
 }
-
+/*
 .article p:hover {
-	/*animation-duration: 3s;
+	animation-duration: 3s;
 	animation-name: arcciel;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;*/
-}
+	animation-direction: alternate;
+}*/
 
 .article h1 {
 	text-decoration: none;
@@ -336,7 +336,12 @@ a {
 	position: sticky;
 	top: 20px;
 }
-
+ /*
+.liste_lien a::before {
+	content: " - ";
+	font-weight: 1000;
+}
+*/
 .liste_lien a {
 	text-decoration: none;
 	color: black;
