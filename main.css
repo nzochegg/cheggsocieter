@@ -335,6 +335,8 @@ a {
 	width: 20vw;
 	position: sticky;
 	top: 20px;
+	overflow-y: scroll;
+	max-height: 750px;
 }
  /*
 .liste_lien a::before {
